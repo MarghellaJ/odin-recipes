@@ -1,21 +1,29 @@
+/* to ensure border-box applies to all elements */
 *,
 *::before,
 *::after {
    box-sizing: border-box;
 }
 
+/* apply to all elements */
 * {
-   outline: 1px solid red;
+   /*use this to outline all boxes on a page*/
+   /* outline: 1px solid red;  */
    margin: 0;
    padding: 0;
 }
 
 body {
-   background-color: lightslategrey;
+   background-color: rgb(164, 186, 207);
+   /* background-color: rgb(166, 174, 182); */
 }
 
 h1 {
+   background-color: rgb(179, 196, 201);
+   /* background-color: rgb(164, 186, 207); */
+   color: rgb(60, 75, 82);
    text-align: center;
+   font-weight: bolder;
 }
 
 nav ul {
@@ -42,25 +50,30 @@ nav ul a:hover {
    width: 400px;
 }
 
+.description {
+   background-color: rgb(179, 196, 201);
+}
+
 #description {
-   display: flex;
-   flex-wrap: wrap;
-   flex-direction: column;
-   justify-content: center;
+   display: block;
+   justify-content: auto;
+   justify-self: center;
    height: 125px;
    width: 800px;
-   margin-left: 550px;
+   margin: auto;
+   padding-top: 10px;
 }
 
 #description p {
-   display: flex;
+   color: rgb(30, 34, 31);
    justify-content: center;
    height: 60px;
    width: 450px;
-   margin: 5px auto;
+   margin: 10px auto;
 }
 
 #description h3 {
+   color: rgb(30, 34, 31);
    width: 350px;
    margin: 5px auto;
 }
@@ -79,6 +92,8 @@ h3 {
 #ingredients {
    display: block;
    list-style: none;
+   padding: 10px auto;
+   color: rgb(34, 36, 36);
 }
 
 #ingredients-list {
@@ -86,10 +101,13 @@ h3 {
 }
 
 .steps {
+   background-color: rgb(179, 196, 201);
+   color: rgb(30, 34, 31);
    width: 30%vw;
 }
 
-.chef-odin-container { /*this is the home page image container*/
+/*this is the home page image container*/
+.chef-odin-container {
    display: flex;
    justify-content: center;
 }
