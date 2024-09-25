@@ -1,24 +1,107 @@
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+}
+
+* {
+   outline: 1px solid red;
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   background-color: lightslategrey;
+}
 
 h1 {
    text-align: center;
 }
 
-.nav-container {
+nav ul {
+   list-style: none;
    display: flex;
    justify-content: center;
-   width: 50%;
 }
 
-
-nav {
-   display: flex;
-   justify-content: space-evenly;
-   /* padding: 5px auto; */
+nav ul a {
+   margin: 5px;
 }
 
-.chef-odin {
+nav ul a:hover {
+   cursor: wait;
+}
+
+.display {
    display: flex;
    justify-content: center;
-   align-items: center;
-   
+}
+
+.display img {
+   height: 350px;
+   width: 400px;
+}
+
+#description {
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+   justify-content: center;
+   height: 125px;
+   width: 800px;
+   margin-left: 550px;
+}
+
+#description p {
+   display: flex;
+   justify-content: center;
+   height: 60px;
+   width: 450px;
+   margin: 5px auto;
+}
+
+#description h3 {
+   width: 350px;
+   margin: 5px auto;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+  height: 22px;
+}
+
+.ingredients, .steps {
+   display: flex;
+   justify-content: center;
+}
+
+#ingredients {
+   display: block;
+   list-style: none;
+}
+
+#ingredients-list {
+   list-style-type: none;
+}
+
+.steps {
+   width: 30%vw;
+}
+
+.chef-odin-container { /*this is the home page image container*/
+   display: flex;
+   justify-content: center;
+}
+
+#chef-odin-img {
+   height: 6oopx;
+   width: 450px;
+}
+
+footer {
+   padding: auto;
+   border-top: solid black 1px;
+   text-align: right;
+   font-size: 8px;
 }
