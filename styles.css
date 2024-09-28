@@ -19,6 +19,7 @@ body {
 }
 
 h1 {
+   display: flex;
    background-color: rgb(179, 196, 201);
    /* background-color: rgb(164, 186, 207); */
    color: rgb(60, 75, 82);
@@ -26,6 +27,15 @@ h1 {
    font-weight: bolder;
 }
 
+h1.construction {
+   height: 60px;
+   color: yellow;
+   justify-content: center;
+   align-items: center;
+   /* padding-bottom: 0; */
+}
+
+/* navbar with dropdown menu for recipe pages */
 .recipes-button {
    background-color: hwb(209 17% 57%);
    color: rgb(60, 75, 82);
@@ -50,6 +60,7 @@ h1 {
 
 nav {
    background-color: #017575;
+   display: flex;
 }
 
 .links,
@@ -70,7 +81,7 @@ nav {
 .links-hidden:hover,
 .links:hover {
    transform: scale(1.2);
-
+   cursor: wait;
 
 }
 
@@ -78,73 +89,7 @@ nav {
    display: block;
 }
 
-/* .navbar {
-   height: 70px;
-   width: 100%;
-   background: black;
-   color: white;
-}
-
-.navbar-nav {
-   list-style-type: none;
-   margin: 0;
-   padding: 0;
-
-   display: flex;
-   align-items: center;
-   justify-content: space-evenly;
-   height: 100%;
-}
-
-.dropdown {
-   opacity: 0;
-   position: absolute;
-   width: 500px;
-   z-index: 2;
-   background: black;
-
-   display: flex;
-   align-items: center;
-   justify-content: space-around;
-   height: 3rem;
-   margin-top: 2rem;
-   padding: 0.5rem;
-
-   transform: translateX(-40%);
-   transition: opacity .15s ease-out;
-}
-
-.dropown-item a {
-   width: 100%;
-   height: 100%;
-} */
-
-/* nav {
-   display: flex;
-   flex-wrap: wrap;
-   flex: 1;
-}
-
-.nav-list {
-   display: flex;
-   flex-wrap: wrap;
-   gap: 1rem;
-
-   margin: 0;
-   padding: 0;
-   list-style: none;
-   /* justify-content: center; */
-}
-
-.nav-list li {
-   flex-grow: 1;
-   flex-shrink: 1;
-}
-
-nav ul a:hover {
-   cursor: wait;
-} */
-
+/* older css needing revision */
 .display {
    display: flex;
    justify-content: center;
@@ -162,7 +107,7 @@ nav ul a:hover {
 #description {
    display: block;
    justify-content: auto;
-   justify-self: center;
+   align-items: center;
    height: 125px;
    width: 800px;
    margin: auto;
@@ -223,8 +168,13 @@ h3 {
 }
 
 footer {
-   padding: auto;
+   padding: 0 auto;
    border-top: solid black 1px;
    text-align: right;
    font-size: 8px;
+}
+
+.construction {
+   font-size: 32px;
+   scrollbar-highlight-color: yellow;
 }

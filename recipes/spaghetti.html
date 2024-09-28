@@ -8,15 +8,23 @@
 </head>
 <body>
    <header>
-      <div class="nav-container">
-         <nav>
-            <ul>
-               <li><a id="home-link" href="../index.html">Home</a></li>
-               <li><a id="stew-link" href="slow-cooker-beef-stew.html">Slow Cooker Beef Stew</a></li>
-               <li><a id="mogolian-link" href="mongolian-beef.html">Mongolian Beef and Spring Onions</a></li>
-            </ul>
-         </nav>
-      </div>
+      <nav class="navabar">
+            <li class="links"><a id="home" href="../index.html">Home</a></li>
+            <li class="links"><a id="about" href="../about.html">About Us</a></li>
+            <li class="links"><a id="blog" href="../blog.html">Blog</a></li>
+            <li class="links"><a id="contact" href="../contact.html">Contact Us</a></li>
+            <!-- recipe dropdown below -->
+            <div class="dropdown-recipes">
+               <button class="recipes-btn">Recipes
+                   <i class="fa fa-caret-down"></i>
+               </button>
+               <div class="recipes-content">
+                   <a class="links-hidden" href="spaghetti.html">Million Dollar Spaghetti</a>
+                   <a class="links-hidden" href="slow-cooker-beef-stew.html">Slow Cooker Beef Stew</a>
+                   <a class="links-hidden" href="mongolian-beef.html">Mongolian Beef and Spring Onions</a>
+               </div>
+            </div>
+      </nav>
    </header>
    <main>
       <h1>Million Dollar Spaghetti</h1>
